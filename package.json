@@ -1,5 +1,5 @@
 {
-  "name": "postcss_simple-scrim",
+  "name": "postcss-simple-scrim",
   "version": "0.1.0",
   "description": "Simple scrim gradient",
   "main": "index.js",
