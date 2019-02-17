@@ -1,0 +1,19 @@
+{
+  "name": "postcss_simple-scrim",
+  "version": "0.1.0",
+  "description": "Simple scrim gradient",
+  "main": "index.js",
+  "scripts": {
+    "test": "ava \"test/*.test.js\" -v -s"
+  },
+  "keywords": [
+    "scrim"
+  ],
+  "author": "Mike Peutz <mpeutz@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "ava": "^1.2.1",
+    "postcss": "^7.0.14",
+    "postcss-value-parser": "^3.3.1"
+  }
+}
