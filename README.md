@@ -7,9 +7,9 @@ This PostCSS plugin lets you add very simple scrim style gradients. It is base o
 
 background: scrim(&lt;direction&gt;, &lt;distance&gt;, &lt;opacity&gt;);
 
-- **@direction** can take any linear-gradient direction property _e.g. to left, 32deg, 1.5rads, 0.25turns ..._
-- **@distance** can take any css length property _e.g. 100px, 60%, 6em, ..._
-- **@opacity** sets the starting opacity of the scrim. _(the scrim will always end with a transparent color-stop)_
+- **@direction** can take any linear-gradient direction property  _e.g. to left, 32deg, 1.5rads, 0.25turns ..._
+- **@distance** can take any css length property  _e.g. 100px, 60%, 6em, ..._
+- **@opacity** sets the starting opacity of the scrim.  _(the scrim will always end with a transparent color-stop)_
 
 ---
 
