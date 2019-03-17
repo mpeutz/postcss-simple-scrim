@@ -56,9 +56,6 @@ module.exports = postcss.plugin('simple-scrim', () => {
                                 const colorStr = scrimParamsSplit[1].toString();
 
                                 let rgb = tinycolor(colorStr).toRgb();
-                                let a = tinycolor(colorStr).getAlpha();
-
-                                // console.log(scrimParams, '  |  ', scrimParamsSplit);
 
                                 const lng = ease.length;
                                 for (let i = 0; i < lng; i++) {
