@@ -1,5 +1,7 @@
 # Postcss scrim gradient plugins
 
+[![Build Status](https://travis-ci.org/mpeutz/postcss-simple-scrim.svg?branch=master)](https://travis-ci.org/mpeutz/postcss-simple-scrim)
+
 This PostCSS plugin lets you add very simple scrim style gradients. It is base on the awesome and more powerful [postcss-easing-gradients](https://github.com/larsenwork/postcss-easing-gradients) plugin by [Andreas Larsen](https://github.com/larsenwork). If you don't need the color and easing control that Andreas' plugin offers then this is the plugin to use.
 
 #### Usage
