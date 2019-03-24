@@ -45,3 +45,10 @@ test('handles colored scrim', t => {
     '.shadow { background: linear-gradient(to bottom,  rgba(255, 0, 0, 1) , rgba(255, 0, 0, 0.95) 0.4em, rgba(255, 0, 0, 0.89) 0.9em, rgba(255, 0, 0, 0.84) 1.2em, rgba(255, 0, 0, 0.79) 1.6em, rgba(255, 0, 0, 0.74) 1.9em, rgba(255, 0, 0, 0.68) 2.1em, rgba(255, 0, 0, 0.63) 2.4em, rgba(255, 0, 0, 0.58) 2.6em, rgba(255, 0, 0, 0.53) 2.9em, rgba(255, 0, 0, 0.47) 3.1em, rgba(255, 0, 0, 0.42) 3.3em, rgba(255, 0, 0, 0.37) 3.6em, rgba(255, 0, 0, 0.32) 3.8em, rgba(255, 0, 0, 0.26) 4.1em, rgba(255, 0, 0, 0.21) 4.4em, rgba(255, 0, 0, 0.16) 4.7em, rgba(255, 0, 0, 0.11) 5.1em, rgba(255, 0, 0, 0.05) 5.5em, rgba(255, 0, 0, 0) ); }'
   );
 });
+
+test('handles colored semi-transparent scrim', t => {
+  return run(t,
+    '.shadow { background: scrim(to bottom, 6em, hsla(0, 100%, 50%, 0.5)); }',
+    '.shadow { background: linear-gradient(to bottom,  rgba(255, 0, 0, 0.5) , rgba(255, 0, 0, 0.47) 0.4em, rgba(255, 0, 0, 0.45) 0.9em, rgba(255, 0, 0, 0.42) 1.2em, rgba(255, 0, 0, 0.39) 1.6em, rgba(255, 0, 0, 0.37) 1.9em, rgba(255, 0, 0, 0.34) 2.1em, rgba(255, 0, 0, 0.32) 2.4em, rgba(255, 0, 0, 0.29) 2.6em, rgba(255, 0, 0, 0.26) 2.9em, rgba(255, 0, 0, 0.24) 3.1em, rgba(255, 0, 0, 0.21) 3.3em, rgba(255, 0, 0, 0.18) 3.6em, rgba(255, 0, 0, 0.16) 3.8em, rgba(255, 0, 0, 0.13) 4.1em, rgba(255, 0, 0, 0.11) 4.4em, rgba(255, 0, 0, 0.08) 4.7em, rgba(255, 0, 0, 0.05) 5.1em, rgba(255, 0, 0, 0.03) 5.5em, rgba(255, 0, 0, 0) ); }'
+  );
+});
