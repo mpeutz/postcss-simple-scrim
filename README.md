@@ -1,6 +1,6 @@
 # Postcss scrim gradient plugins
 
-This PostCSS plugin lets you add very simple scrim style gradients. It is base on the awesome and more powerful [postcss-easing-gradients](https://github.com/larsenwork/postcss-easing-gradients) plugin by [Andreas Larsen](https://github.com/larsenwork). If you don't need the color and easing control that Andreas' plugin offers then this is the plugin to use.
+This PostCSS plugin lets you add very simple scrim style gradients. It is base on the awesome and more powerful [postcss-easing-gradients](https://github.com/larsenwork/postcss-easing-gradients) plugin by [Andreas Larsen](https://github.com/larsenwork). If you don't need the easing control that Andreas' plugin offers then this is the plugin to use.
 
 #### Usage
 ---
@@ -8,17 +8,14 @@ This PostCSS plugin lets you add very simple scrim style gradients. It is base o
 background: scrim(&lt;direction&gt;, &lt;distance&gt;, &lt;opacity&gt;);
 
 - **@direction** can take any linear-gradient direction property  _e.g. to left, 32deg, 1.5rads, 0.25turns ..._
-- **@distance** can take any css length property  _e.g. 100px, 60%, 6em, ..._
-- **@opacity** sets the starting opacity of the scrim.  _(the scrim will always end with a transparent color-stop)_
+- **@distance** can take any CSS length property  _e.g. 100px, 60%, 6em, ..._
+- **@color** sets the starting color and opacity of the scrim.  _(the scrim will always end with a transparent color-stop)_
 
 ---
 
 ```css
 /* input.css */
-background-image: scrim(to bottom, 100px, 1);
-
-/* output.css */
-background-image:
+background-image: scrim(to bottom, 100px, #000)
     linear-gradient(
         to bottom,
         rgba(0, 0, 0, 1),
